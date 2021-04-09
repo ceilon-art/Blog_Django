@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Início em Blog do André</title>
+
+    {% include 'parcials/__head.html' %}
+</head>
+
+<body>
+
+    {% include 'parcials/__nav.html' %}
+
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+           {% block conteudo %}{% endblock %}
+        </div>
+    </div>
+</div>
+
+    {% include 'parcials/__footer.html' %}
+
+</body>
+
+</html>
